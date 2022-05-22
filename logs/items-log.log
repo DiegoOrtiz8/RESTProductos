@@ -1,0 +1,14 @@
+2022-05-22 16:58:00,763 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RestItemsApplication using Java 18 on LAPTOP-5H0JNLOJ with PID 8932 (C:\Users\106625781\IdeaProjects\RESTItems\target\classes started by 106625781 in C:\Users\106625781\IdeaProjects\RESTProductos)
+2022-05-22 16:58:00,765 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-22 16:58:00,815 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-22 16:58:00,817 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-22 16:58:01,460 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8002 (http)
+2022-05-22 16:58:01,466 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8002"]
+2022-05-22 16:58:01,466 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-22 16:58:01,466 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-22 16:58:01,519 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-22 16:58:01,520 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 702 ms
+2022-05-22 16:58:01,787 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-22 16:58:01,798 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8002"]
+2022-05-22 16:58:01,813 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8002 (http) with context path '/api/v1/rest-items'
+2022-05-22 16:58:01,822 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RestItemsApplication in 1.372 seconds (JVM running for 2.174)
