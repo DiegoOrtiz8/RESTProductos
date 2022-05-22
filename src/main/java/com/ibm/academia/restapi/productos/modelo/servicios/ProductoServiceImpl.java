@@ -1,8 +1,8 @@
-package com.ibm.academia.restapi.productos.servicios;
+package com.ibm.academia.restapi.productos.modelo.servicios;
 
 import com.ibm.academia.restapi.productos.excepciones.NotFoundException;
 import com.ibm.academia.restapi.productos.modelo.entidades.Producto;
-import com.ibm.academia.restapi.productos.repositorios.ProductoRepository;
+import com.ibm.academia.restapi.productos.modelo.repositorios.ProductoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProductoDAOImpl implements ProductoDAO{
+public class ProductoServiceImpl implements IProductoService {
 
     @Autowired
     private ProductoRepository productoRepository;

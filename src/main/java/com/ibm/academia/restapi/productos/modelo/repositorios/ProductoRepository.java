@@ -1,4 +1,4 @@
-package com.ibm.academia.restapi.productos.repositorios;
+package com.ibm.academia.restapi.productos.modelo.repositorios;
 
 import com.ibm.academia.restapi.productos.modelo.entidades.Producto;
 import org.springframework.data.repository.PagingAndSortingRepository;

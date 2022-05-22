@@ -1,7 +1,7 @@
 package com.ibm.academia.restapi.productos.controladores;
 
 import com.ibm.academia.restapi.productos.modelo.entidades.Producto;
-import com.ibm.academia.restapi.productos.servicios.ProductoDAO;
+import com.ibm.academia.restapi.productos.modelo.servicios.IProductoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class ProductoController {
     private final static Logger logger = LoggerFactory.getLogger(ProductoController.class);
 
     @Autowired
-    private ProductoDAO productoDAO;
+    private IProductoService IProductoService;
 
     /**
      * Enpoint para consultar todos los productos
@@ -31,7 +31,7 @@ public class ProductoController {
      */
     @GetMapping("/listar")
     public ResponseEntity<?> consultarTodosProductos() {
-        List<Producto> productos = productoDAO.buscarTodos();
+        List<Producto> productos = IProductoService.buscarTodos();
 
         return new ResponseEntity<List<Producto>>(productos, HttpStatus.OK);
     }
@@ -44,11 +44,11 @@ public class ProductoController {
      * @author DECO 22-05-2022
      */
     @GetMapping("/ver-detalle/productoId/{productoId}")
-    public ResponseEntity<?> verDetalleProducto(@PathVariable Long productoId) {
+    public ResponseEntity<?> consultarDetalleProducto(@PathVariable Long productoId) {
         Optional<Producto> producto = null;
 
         try {
-            producto = productoDAO.buscarPorId(productoId);
+            producto = IProductoService.buscarPorId(productoId);
         }
         catch (Exception e) {
             logger.info(e.getMessage() + " causa: " + e.getCause());
